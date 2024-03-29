@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/base.css"; // Importing styles from base file
+import Hero from "./components/hero.js";
+import Footer from "./components/footer.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-white min-h-screen flex flex-col items-center justify-center">
+      <Hero/>
+      <main className="max-w-800 mx-auto px-4 py-20"> {/* Changed max-w-800px to max-w-800 */}
+      </main>
+      <Footer/>
     </div>
   );
 }
