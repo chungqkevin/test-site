@@ -1,6 +1,5 @@
 {
   "name": "test-site",
-  "homepage": "https://chungqkevin.github.io/test-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
